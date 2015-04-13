@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9OI-nq-4d7">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="GkC-oB-5re">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="9OI-nq-4d7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="gyf-sx-9RN">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="OlW-Uk-Uki" kind="relationship" relationship="viewControllers" id="DqL-eG-eJi"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g51-N9-cQe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3361.5" y="-718.5"/>
+        </scene>
+        <!--旅游资讯-->
+        <scene sceneID="hmt-vw-9O7">
+            <objects>
+                <tableViewController id="bIM-B5-CfO" customClass="TravelInformationViewController" customModule="OldSummerFilm" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="qeH-Ki-Jx6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="reuseIdentifier" rowHeight="80" id="0ST-Ar-dgm" customClass="TravelInformationCell" customModule="OldSummerFilm" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0ST-Ar-dgm" id="t0w-4g-q3k">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="景点名称" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWe-df-dTH">
+                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="7gT-FQ-g1u"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="7gT-FQ-g1u"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="7gT-FQ-g1u"/>
+                                                </mask>
+                                            </variation>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="门票起价(元):" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHY-yz-NWA">
+                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="PyX-R3-VkV"/>
+                                                <constraint firstAttribute="width" constant="83" id="q6j-z5-dDe"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="PyX-R3-VkV"/>
+                                                    <exclude reference="q6j-z5-dDe"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="PyX-R3-VkV"/>
+                                                    <include reference="q6j-z5-dDe"/>
+                                                </mask>
+                                            </variation>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sbm-jT-hQg">
+                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="2Ez-QW-61c"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.92549019610000005" green="0.42352941179999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="2Ez-QW-61c"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="2Ez-QW-61c"/>
+                                                </mask>
+                                            </variation>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="景点地址" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQz-P6-yKO">
+                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="myM-h2-NhM"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="myM-h2-NhM"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="myM-h2-NhM"/>
+                                                </mask>
+                                            </variation>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AAAAA" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YB8-e7-ymB">
+                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="9zP-sD-6mb"/>
+                                                <constraint firstAttribute="width" constant="48" id="V67-sa-SRb"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="9zP-sD-6mb"/>
+                                                    <exclude reference="V67-sa-SRb"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="9zP-sD-6mb"/>
+                                                    <include reference="V67-sa-SRb"/>
+                                                </mask>
+                                            </variation>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SON-py-HCG">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="93" id="a0C-ec-bsz"/>
+                                                <constraint firstAttribute="height" constant="70" id="gfy-JO-txP"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="a0C-ec-bsz"/>
+                                                    <exclude reference="gfy-JO-txP"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="a0C-ec-bsz"/>
+                                                    <include reference="gfy-JO-txP"/>
+                                                </mask>
+                                            </variation>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Sbm-jT-hQg" firstAttribute="leading" secondItem="MHY-yz-NWA" secondAttribute="trailing" constant="8" id="0ZT-hG-dQR"/>
+                                        <constraint firstItem="kQz-P6-yKO" firstAttribute="leading" secondItem="SON-py-HCG" secondAttribute="trailing" constant="8" id="5f1-Ue-UhR"/>
+                                        <constraint firstAttribute="centerY" secondItem="SON-py-HCG" secondAttribute="centerY" id="5pY-Wh-JhB"/>
+                                        <constraint firstAttribute="trailing" secondItem="Sbm-jT-hQg" secondAttribute="trailing" constant="8" id="9YS-Qb-ugy"/>
+                                        <constraint firstAttribute="trailing" secondItem="kQz-P6-yKO" secondAttribute="trailing" constant="8" id="BH7-fd-v6e"/>
+                                        <constraint firstItem="SON-py-HCG" firstAttribute="leading" secondItem="t0w-4g-q3k" secondAttribute="leading" constant="8" id="CSr-dO-tTl"/>
+                                        <constraint firstItem="Sbm-jT-hQg" firstAttribute="top" secondItem="t0w-4g-q3k" secondAttribute="top" constant="54" id="Dqi-LD-BxM"/>
+                                        <constraint firstItem="IWe-df-dTH" firstAttribute="leading" secondItem="SON-py-HCG" secondAttribute="trailing" constant="8" id="Pjn-yz-nED"/>
+                                        <constraint firstItem="YB8-e7-ymB" firstAttribute="top" secondItem="t0w-4g-q3k" secondAttribute="top" constant="9" id="SLv-ag-XXu"/>
+                                        <constraint firstItem="YB8-e7-ymB" firstAttribute="leading" secondItem="IWe-df-dTH" secondAttribute="trailing" constant="8" id="SoU-Dk-QaH"/>
+                                        <constraint firstItem="MHY-yz-NWA" firstAttribute="leading" secondItem="t0w-4g-q3k" secondAttribute="leading" constant="109" id="Zx3-Dm-5hc"/>
+                                        <constraint firstAttribute="trailing" secondItem="YB8-e7-ymB" secondAttribute="trailing" constant="8" id="ann-J2-D53"/>
+                                        <constraint firstItem="MHY-yz-NWA" firstAttribute="top" secondItem="t0w-4g-q3k" secondAttribute="top" constant="54" id="mlG-Ak-oN0"/>
+                                        <constraint firstItem="kQz-P6-yKO" firstAttribute="top" secondItem="t0w-4g-q3k" secondAttribute="top" constant="31" id="x8z-9x-bK8"/>
+                                        <constraint firstItem="IWe-df-dTH" firstAttribute="top" secondItem="t0w-4g-q3k" secondAttribute="top" constant="9" id="zxj-sw-kMT"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="IWe-df-dTH"/>
+                                            <exclude reference="MHY-yz-NWA"/>
+                                            <exclude reference="Sbm-jT-hQg"/>
+                                            <exclude reference="kQz-P6-yKO"/>
+                                            <exclude reference="YB8-e7-ymB"/>
+                                            <exclude reference="SON-py-HCG"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <exclude reference="5pY-Wh-JhB"/>
+                                            <exclude reference="CSr-dO-tTl"/>
+                                            <exclude reference="Pjn-yz-nED"/>
+                                            <exclude reference="zxj-sw-kMT"/>
+                                            <exclude reference="5f1-Ue-UhR"/>
+                                            <exclude reference="BH7-fd-v6e"/>
+                                            <exclude reference="x8z-9x-bK8"/>
+                                            <exclude reference="Zx3-Dm-5hc"/>
+                                            <exclude reference="mlG-Ak-oN0"/>
+                                            <exclude reference="0ZT-hG-dQR"/>
+                                            <exclude reference="9YS-Qb-ugy"/>
+                                            <exclude reference="Dqi-LD-BxM"/>
+                                            <exclude reference="SLv-ag-XXu"/>
+                                            <exclude reference="SoU-Dk-QaH"/>
+                                            <exclude reference="ann-J2-D53"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="heightClass=regular-widthClass=compact">
+                                        <mask key="subviews">
+                                            <include reference="IWe-df-dTH"/>
+                                            <include reference="MHY-yz-NWA"/>
+                                            <include reference="Sbm-jT-hQg"/>
+                                            <include reference="kQz-P6-yKO"/>
+                                            <include reference="YB8-e7-ymB"/>
+                                            <include reference="SON-py-HCG"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <include reference="5pY-Wh-JhB"/>
+                                            <include reference="CSr-dO-tTl"/>
+                                            <include reference="Pjn-yz-nED"/>
+                                            <include reference="zxj-sw-kMT"/>
+                                            <include reference="5f1-Ue-UhR"/>
+                                            <include reference="BH7-fd-v6e"/>
+                                            <include reference="x8z-9x-bK8"/>
+                                            <include reference="Zx3-Dm-5hc"/>
+                                            <include reference="mlG-Ak-oN0"/>
+                                            <include reference="0ZT-hG-dQR"/>
+                                            <include reference="9YS-Qb-ugy"/>
+                                            <include reference="Dqi-LD-BxM"/>
+                                            <include reference="SLv-ag-XXu"/>
+                                            <include reference="SoU-Dk-QaH"/>
+                                            <include reference="ann-J2-D53"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="travelAddressLB" destination="kQz-P6-yKO" id="rA8-pi-2MN"/>
+                                    <outlet property="travelGradeLB" destination="YB8-e7-ymB" id="Bcx-Mp-Rfb"/>
+                                    <outlet property="travelImageView" destination="SON-py-HCG" id="gzm-4D-gef"/>
+                                    <outlet property="travelNameLB" destination="IWe-df-dTH" id="lce-nn-9qc"/>
+                                    <outlet property="travelPriceLB" destination="Sbm-jT-hQg" id="2rv-Q3-x60"/>
+                                    <segue destination="W2Y-8f-QMQ" kind="push" identifier="travelDetail" id="pEi-1u-naU"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bIM-B5-CfO" id="9IO-ec-P70"/>
+                            <outlet property="delegate" destination="bIM-B5-CfO" id="cwI-eD-Jci"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="旅游资讯" id="Rl0-ub-kvh">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="yp6-La-Ntq">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Blm-fn-k8T">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="全国">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="IHK-wm-GFf" kind="push" id="rx0-Rc-hHT"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cityBtn" destination="Blm-fn-k8T" id="5Ev-QH-V3k"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SCI-vo-QFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1117.5" y="-1326.75"/>
+        </scene>
+        <!--景点详情-->
+        <scene sceneID="67u-0D-Hp3">
+            <objects>
+                <tableViewController id="W2Y-8f-QMQ" customClass="TravelDetailViewController" customModule="OldSummerFilm" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="kvD-PR-Lcd">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="景点风景" id="ACM-yx-AWn">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="146" id="TtL-5o-JAK">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TtL-5o-JAK" id="SUj-p6-JZx">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b7A-zo-jBR" customClass="TopPicView" customModule="OldSummerFilm" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="b7A-zo-jBR" firstAttribute="top" secondItem="SUj-p6-JZx" secondAttribute="top" id="6ee-Uh-hv0"/>
+                                                <constraint firstAttribute="trailing" secondItem="b7A-zo-jBR" secondAttribute="trailing" id="Dsk-eY-8dY"/>
+                                                <constraint firstAttribute="bottom" secondItem="b7A-zo-jBR" secondAttribute="bottom" id="bV5-sL-Sej"/>
+                                                <constraint firstItem="b7A-zo-jBR" firstAttribute="leading" secondItem="SUj-p6-JZx" secondAttribute="leading" id="dbU-Ac-69z"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="b7A-zo-jBR"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <exclude reference="6ee-Uh-hv0"/>
+                                                    <exclude reference="Dsk-eY-8dY"/>
+                                                    <exclude reference="bV5-sL-Sej"/>
+                                                    <exclude reference="dbU-Ac-69z"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="b7A-zo-jBR"/>
+                                                </mask>
+                                                <mask key="constraints">
+                                                    <include reference="6ee-Uh-hv0"/>
+                                                    <include reference="Dsk-eY-8dY"/>
+                                                    <include reference="bV5-sL-Sej"/>
+                                                    <include reference="dbU-Ac-69z"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="景点周边" id="ddF-hF-tvg">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="9qj-0U-svo">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9qj-0U-svo" id="zTw-Kg-ya0">
+                                            <rect key="frame" x="0.0" y="0.0" width="400" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="门票信息" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0KT-Fo-MlT">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="8" y="11" width="73" height="21"/>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="0KT-Fo-MlT"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="0KT-Fo-MlT"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="tgx-m4-Xv5">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tgx-m4-Xv5" id="SCU-bu-W8m">
+                                            <rect key="frame" x="0.0" y="0.0" width="400" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="酒店列表" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Pa-5e-5Gj">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="8" y="11" width="73" height="21"/>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="8Pa-5e-5Gj"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="8Pa-5e-5Gj"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="W2Y-8f-QMQ" id="dzO-wR-hFA"/>
+                            <outlet property="delegate" destination="W2Y-8f-QMQ" id="Y2M-6u-l8r"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="景点详情" id="Jlg-fg-b1O"/>
+                    <connections>
+                        <outlet property="headerView" destination="b7A-zo-jBR" id="4l5-iZ-jja"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v71-1g-p9L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-285" y="-1326.75"/>
+        </scene>
+        <!--选择城市-->
+        <scene sceneID="C3j-9j-Rxi">
+            <objects>
+                <tableViewController hidesBottomBarWhenPushed="YES" id="IHK-wm-GFf" customClass="CityViewController" customModule="OldSummerFilm" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="SAs-m0-EUf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="eH9-2l-TmI">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eH9-2l-TmI" id="IsD-hK-33k">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="IHK-wm-GFf" id="211-xd-8pW"/>
+                            <outlet property="delegate" destination="IHK-wm-GFf" id="p5I-Vn-p9O"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="选择城市" id="mxV-2t-C7f"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dot-NA-JbO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-285" y="-2045.25"/>
+        </scene>
+        <!--旅游资讯-->
+        <scene sceneID="dtA-I5-KcR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OlW-Uk-Uki" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="旅游资讯" id="kYv-R8-gGp"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BZw-Bo-QGs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bIM-B5-CfO" kind="relationship" relationship="rootViewController" id="TUC-ty-Vqv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SLZ-1n-VUh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1927.5" y="-1326.75"/>
+        </scene>
+    </scenes>
+</document>
